@@ -1,0 +1,120 @@
+// components/GoogleTranslate.js
+import { useEffect } from 'react';
+
+const GoogleTranslate = () => {
+  useEffect(() => {
+    // Remove any existing Google Translate elements
+    const existingScript = document.getElementById('google-translate-script');
+    if (existingScript) existingScript.remove();
+    
+    const addScript = document.createElement('script');
+    addScript.id = 'google-translate-script';
+    addScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    document.body.appendChild(addScript);
+
+    window.googleTranslateElementInit = () => {
+      new window.google.translate.TranslateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,am',
+          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+      );
+    };
+
+    return () => {
+      document.body.removeChild(addScript);
+      delete window.googleTranslateElementInit;
+    };
+  }, []);
+
+  return <div id="google_translate_element" style={{ display: 'inline-block' }}></div>;
+};
+
+export default GoogleTranslate;  
+
+
+
+
+
+
+
+..............................................
+
+// Inside your Navbar component, in the Nav component
+// Add this before the theme toggle Nav.Link
+<Nav.Link style={{ marginLeft: '20px' }}>
+  <GoogleTranslate />
+</Nav.Link>
+
+................
+
+
+import GoogleTranslate from './GoogleTranslate'; // Adjust path as needed
+
+................................
+
+/* Add to your HomePage.css */
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+  }
+  
+  body {
+    top: 0px !important;
+  }
+  
+  .goog-te-menu-value span {
+    color: inherit !important;
+  }
+  
+  .goog-te-menu-value {
+    border: none !important;
+    font-family: inherit !important;
+    color: inherit !important;
+  }
+  
+  .goog-te-gadget {
+    font-family: inherit !important;
+  }
+  
+  .goog-te-menu2 {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    background-color: #112240 !important;
+  }
+  
+  .goog-te-menu2-item div, .goog-te-menu2-item:link {
+    color: #ccd6f6 !important;
+  }
+
+
+  ..................
+
+  const GoogleTranslate = ({ isDarkMode }) => {
+    useEffect(() => {
+      // ... existing script loading code ...
+  
+      window.googleTranslateElementInit = () => {
+        new window.google.translate.TranslateElement(
+          {
+            pageLanguage: 'en',
+            includedLanguages: 'en,am',
+            layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+            // Add theme-based styling
+            gaTrack: true,
+            gaId: 'YOUR_GA_ID',
+            ...(isDarkMode && {
+              // Dark mode specific config
+              multilanguagePage: true,
+              floatPosition: 0
+            })
+          },
+          'google_translate_element'
+        );
+      };
+      // ... rest of the code ...
+
+
+      .....................
+      <GoogleTranslate isDarkMode={isDarkMode} />

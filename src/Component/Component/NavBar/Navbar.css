@@ -1,0 +1,44 @@
+/* NavBar.css */
+.navbar {
+    background: rgba(26, 26, 26, 0.8) !important; /* Glassmorphism effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-bottom: 1px solid #00ff88; /* Neon border */
+  }
+  
+  .nav-link {
+    color: #fff !important;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link.active {
+    color: #00ff88 !important; /* Neon green for active link */
+    border-bottom: 2px solid #00ff88; /* Underline effect */
+  }
+  
+  .nav-link:hover {
+    color: #00ff88 !important; /* Neon green on hover */
+  }
+  
+  .btn-outline-light {
+    border-color: #00ff88 !important;
+    color: #00ff88 !important;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #00ff88 !important;
+    color: #0f0f0f !important;
+  }
+  
+  .btn-light {
+    background-color: #00ff88 !important;
+    color: #0f0f0f !important;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-light:hover {
+    background-color: #00cc66 !important; /* Darker neon green on hover */
+  }

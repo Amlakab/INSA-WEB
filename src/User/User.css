@@ -1,0 +1,39 @@
+/* User.css */
+.user-home {
+  font-family: 'Arial', sans-serif;
+}
+
+.futuristic-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.futuristic-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.futuristic-button {
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.futuristic-button:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.futuristic-progress {
+  height: 20px;
+  border-radius: 10px;
+  background: #e0e0e0;
+}
+
+.futuristic-progress .progress-bar {
+  border-radius: 10px;
+}

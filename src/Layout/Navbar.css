@@ -1,0 +1,34 @@
+/* App.css */
+.nav-link-hover {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link-hover:hover {
+  color: #00ffff !important; /* Neon cyan for hover */
+  transform: translateY(-2px);
+}
+
+.navbar {
+  border-bottom: 2px solid #00ffff; /* Neon cyan border */
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+  font-weight: bold;
+}
+
+.navbar-dropdown {
+  background: linear-gradient(135deg, #0a192f, #112240);
+  border: 1px solid #00ffff;
+  border-radius: 10px;
+}
+
+.navbar-dropdown .dropdown-item {
+  color: #ccd6f6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-dropdown .dropdown-item:hover {
+  background: #00ffff;
+  color: #0a192f;
+}

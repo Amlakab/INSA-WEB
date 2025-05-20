@@ -1,0 +1,53 @@
+.user-home-container {
+    background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+    min-height: 100vh;
+    padding-top: 80px;
+  }
+  
+  .futuristic-card {
+    background: linear-gradient(145deg, #2c2c2c, #1f1f1f);
+    border: 1px solid #00ff88;
+    color: #fff;
+  }
+  
+  .user-icon {
+    color: #00ff88;
+    margin-bottom: 20px;
+  }
+  
+  .user-name {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .user-username {
+    color: #ccc;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .futuristic-list .list-group-item {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #00ff88;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .futuristic-button {
+    background: linear-gradient(135deg, #00ff88, #00cc66);
+    border: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .futuristic-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00ff88;
+  }
+  
+  .button-group {
+    gap: 15px;
+  }

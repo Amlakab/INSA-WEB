@@ -1,0 +1,60 @@
+/* Admin Dashboard Styles */
+
+/* General Container */
+.container {
+    max-width: 1200px;
+  }
+  
+  /* Card Shadow */
+  .shadow-lg {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  /* Section Titles */
+  h1 {
+    font-size: 3rem;
+    color: #343a40;
+    font-weight: 700;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  h5 {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Button Styling */
+  button {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Card body spacing */
+  .card-body {
+    padding: 2rem;
+  }
+  
+  /* Icons */
+  svg {
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-body {
+      padding: 1.5rem;
+    }
+  }
+  

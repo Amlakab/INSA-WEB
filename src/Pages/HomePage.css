@@ -1,0 +1,50 @@
+.nav-link-hover {
+    position: relative;
+    text-decoration: none;
+    color: var(--primary-color); /* Default link color */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .nav-link-hover::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Start with no width */
+    height: 2px; /* Border thickness */
+    background: white; /* Border color */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Smooth width transition */
+  }
+  
+  /* Hover Effect */
+  .nav-link-hover:hover {
+    color: white !important; /* Change text color on hover */
+  }
+  
+  .nav-link-hover:hover::after {
+    width: 100%; /* Expand border to full width on hover */
+  }
+  
+  /* Active State */
+  .nav-link-hover.active {
+    color: white !important; /* Change text color when active */
+  }
+  
+  .nav-link-hover.active::after {
+    width: 100%; /* Keep border at full width when active */
+    background: white; /* Border color when active */
+  }
+  /* Custom hover effect for images */
+/* Custom hover effect for images */
+.img-fluid {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px; /* Add gap between images */
+}
+
+.img-fluid:hover {
+  transform: scale(1.05); /* Zoom effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.hover-no-underline:hover {
+  text-decoration: none !important;
+}

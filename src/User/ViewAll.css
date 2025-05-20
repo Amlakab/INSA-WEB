@@ -1,0 +1,99 @@
+.view-all-container {
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.banner-card {
+  background: #ffffff;
+  border: 1px solid #007bff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+.add-user-btn {
+  background: #007bff;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.add-user-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.futuristic-search-bar {
+  background: #ffffff;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.futuristic-search-input {
+  background: #ffffff;
+  color: #333333;
+  border: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.futuristic-search-input:focus {
+  background: #ffffff;
+  color: #333333;
+  box-shadow: none;
+}
+
+.input-group-text {
+  background: #ffffff;
+  border: none;
+  color: #007bff;
+  padding: 10px;
+}
+
+.user-card {
+  background: #ffffff;
+  border: 1px solid #007bff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5);
+}
+
+.btn-info, .btn-warning, .btn-danger {
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.btn-info:hover, .btn-warning:hover, .btn-danger:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+.banner-card {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  border: 1px solid #00ff88;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+.futuristic-search-input:focus {
+  background: #f5f5f5;  /* Slight background change on focus */
+  color: #333333;       /* Keeps text color the same */
+  border: 1px solid #00ff88;  /* Adding a green border on focus for better indication */
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.4); /* A subtle glow effect */
+}
+
+.futuristic-search-input::placeholder {
+  color: white !important;  /* Ensures the placeholder is white */
+  opacity: 1;  /* Full visibility */
+}
+

@@ -1,0 +1,20 @@
+/* Custom CSS for smaller cards */
+.user-card {
+  max-width: 100%; /* Adjust the max width as needed */
+  margin: 0 auto; /* Center the card */
+  height: auto; /* Ensure the card height is small */
+}
+
+/* Custom CSS for icon-only buttons */
+.btn-sm {
+  padding: 0.25rem 0.5rem; /* Smaller padding for buttons */
+}
+/* Custom CSS for wider and shorter buttons */
+.btn-wide {
+  width: 47%; /* Adjust the width as needed */
+}
+
+.btn-short {
+  padding: 0.5rem 0.2rem; /* Adjust the padding to decrease height */
+  font-size: 0.9rem; /* Adjust the font size if needed */
+}

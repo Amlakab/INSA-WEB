@@ -1,0 +1,98 @@
+/* Importing custom font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fb;
+}
+
+/* Table styling */
+.table {
+  background-color: #343a40;
+  border-radius: 10px;
+}
+
+.table th {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.table td {
+  font-size: 1rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #495057;
+}
+
+.table th, .table td {
+  padding: 15px;
+}
+
+.table td {
+  text-align: center;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Add smooth transitions for table rows */
+.table tbody tr {
+  transition: transform 0.3s ease;
+}
+
+/* Button Styling */
+button, .btn {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.1);
+}
+.banner-card {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  padding: 20px;
+  border-radius: 15px;
+}
+/* Hover animation */
+.user-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/* Add a smooth transition effect for the button */
+.add-user-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-user-btn:hover {
+  transform: scale(1.1); /* Increase the size of the button */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow when hovered */
+}
+/* Custom CSS for smaller cards */
+.user-card-sm {
+  height: 280px; /* Adjust the card height */
+}
+
+.user-card-sm .card-body {
+  padding: 10px; /* Reduce internal padding */
+}
+
+.user-card-sm h5 {
+  font-size: 1.1rem; /* Reduce font size of user name */
+}
+
+.user-card-sm .small {
+  font-size: 0.85rem; /* Smaller text for additional info */
+}
+
+.user-card-sm .btn-sm {
+  padding: 0.3rem 0.5rem; /* Smaller buttons */
+}
